@@ -1,21 +1,13 @@
 @echo off
 
-net stop "Windows Update"
+net stop wuauserv
 
 powercfg -s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
-choco install -y python
-
-python -m pip install --upgrade pip
-pip install tqdm
-pip install requests
-
-python downloadPrograms.py
-
 REM ----ESSENTIAL-----
-choco install -y vcredist-all
+choco install -y vcredist-all nvidia-display-driver geforce-game-ready-driver
 
 REM ----CHAT----
 choco install -y discord 
@@ -30,4 +22,15 @@ REM ----INTERNET----
 choco install -y firefox microsoft-edge googlechrome
 
 REM ----DEV----
-choco install -y pycharm-community intellijidea-community visualstudio2019community vscode jdk8 jre8 github-desktop postman openjdk
+choco install -y python pycharm-community intellijidea-community visualstudio2019community vscode jdk8 jre8 github-desktop postman insomnia-rest-api-client openjdk
+
+REM ----PYTHON SCRIPT----
+python -m pip install --upgrade pip
+pip install tqdm
+pip install requests
+
+python downloadPrograms.py
+
+choco upgrade all -y
+
+net start wuauserv
