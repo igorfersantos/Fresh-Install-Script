@@ -21,7 +21,7 @@ REM ----CHAT----
 choco install -y discord 
 
 REM ----UTILS----
-choco install -y imageglass msiafterburner 7zip notepadplusplus winrar thunderbird revo-uninstaller obs-studio vlc k-litecodecpackfull
+choco install -y imageglass msiafterburner 7zip notepadplusplus winrar thunderbird revo-uninstaller obs-studio vlc k-litecodecpackfull malwarebytes
 
 REM ----GAMES RELATED----
 choco install -y twitch steam origin epicgameslauncher
@@ -31,4 +31,3 @@ choco install -y firefox microsoft-edge googlechrome
 
 REM ----DEV----
 choco install -y pycharm-community intellijidea-community visualstudio2019community vscode jdk8 jre8 github-desktop postman openjdk
-malwarebytes 
