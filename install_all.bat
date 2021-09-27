@@ -14,4 +14,4 @@ pip install requests
 
 python downloadPrograms.py
 
-cinst -y discord imageglass malwarebytes pycharm-community twitch msiafterburner revo-uninstaller obs-studio playnite steam origin intellijidea-community visualstudio2019community epicgameslauncher vscode firefox googlechrome jdk8 jre8 7zip notepadplusplus github-desktop winrar postman vlc k-litecodecpackfull
+cinst -y discord imageglass malwarebytes pycharm-community twitch msiafterburner revo-uninstaller obs-studio playnite steam origin intellijidea-community visualstudio2019community epicgameslauncher vscode firefox googlechrome jdk8 jre8 7zip notepadplusplus github-desktop winrar postman vlc k-litecodecpackfull thunderbird openjdk
