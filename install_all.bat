@@ -24,7 +24,7 @@ REM ----INTERNET----
 choco install -y firefox microsoft-edge googlechrome
 
 REM ----DEV----
-choco install -y python pycharm-community intellijidea-community visualstudio2019community vscode jdk8 jre8 github-desktop postman insomnia-rest-api-client openjdk
+choco install -y git.install python pycharm-community intellijidea-community visualstudio2019community vscode jdk8 jre8 github-desktop postman insomnia-rest-api-client openjdk
 
 REM ----PYTHON SCRIPT----
 python -m pip install --upgrade pip
