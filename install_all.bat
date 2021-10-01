@@ -8,6 +8,7 @@ powercfg -s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 
 start "Installing Cloudflare WARP" cmd.exe @cmd /k "curl -o ./downloads/cloudflare-x64.msi https://1.1.1.1/Cloudflare_WARP_Release-x64.msi --create-dirs & msiexec /i "./downloads/cloudflare-x64.msi" & pause"
 start "Installing WhatsApp" cmd.exe @cmd /k "curl --create-dirs -o ./downloads/WhatsAppSetup.exe -L https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe & start ./downloads/WhatsAppSetup.exe & pause"
+start "Installing Sublime Text 4" cmd.exe @cmd /k "curl --create-dirs -o ./downloads/sublime_text_build_4113_x64_setup.exe  https://download.sublimetext.com/sublime_text_build_4113_x64_setup.exe & start ./downloads/sublime_text_build_4113_x64_setup.exe & pause"
 
 REM ----ESSENTIAL-----
 choco install -y nvidia-display-driver geforce-game-ready-driver
