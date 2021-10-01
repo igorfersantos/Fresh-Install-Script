@@ -7,7 +7,7 @@ powercfg -s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
 start "Installing Cloudflare WARP" cmd.exe @cmd /k "curl -o ./downloads/cloudflare-x64.msi https://1.1.1.1/Cloudflare_WARP_Release-x64.msi --create-dirs & msiexec /i "./downloads/cloudflare-x64.msi" & pause"
-start "Installing WhatsApp" cmd.exe @cmd /k "
+start "Installing WhatsApp" cmd.exe @cmd /k "curl --create-dirs -o ./downloads/WhatsAppSetup.exe -L https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe & start ./downloads/WhatsAppSetup.exe & pause"
 
 REM ----ESSENTIAL-----
 choco install -y nvidia-display-driver geforce-game-ready-driver
