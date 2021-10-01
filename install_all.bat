@@ -14,7 +14,7 @@ REM ----ESSENTIAL-----
 choco install -y nvidia-display-driver geforce-game-ready-driver
 
 REM ----CHAT----
-choco install -y discord 
+choco install -y discord telegram
 
 REM ----UTILS----
 choco install -y imageglass msiafterburner 7zip notepadplusplus winrar thunderbird revo-uninstaller obs-studio vlc k-litecodecpackfull malwarebytes
