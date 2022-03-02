@@ -7,7 +7,7 @@ It also prevents Windows Update from making automatic downloads such as video ca
 
 # Selecting the desired programs
 The desired programs to be downloaded and installed can be selected by changing the chocolatey commands located at install_all.bat
-I also recommend you to also check Chocolatey website and documentation before editing it. It's the effort :) 
+I also recommend you to also check Chocolatey website and documentation before editing it. It's worth the effort :) 
 https://chocolatey.org/
 
 #
